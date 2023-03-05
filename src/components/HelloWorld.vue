@@ -157,7 +157,7 @@
 
 <script lang="ts" setup>
   import PessoaModel from '@/models/PessoaModel';
-  import {onMounted, ref} from 'vue';
+  import { onMounted, ref } from 'vue';
   import pessoaHttpService from '@/http/pessoa-http-service';
   import { get } from 'http';
 
@@ -186,7 +186,7 @@
 
     pessoaHttpService.delete(event)
     .then(() => {
-      alert('Deletado com suceso.')
+      alert('Deletado com sucesso.')
       getAll()
     })
   }
